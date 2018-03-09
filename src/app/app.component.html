@@ -1,7 +1,9 @@
+<!--https://stackoverflow.com/questions/36292438/how-to-use-bootstrap-css-library-in-angular-2-project-->
 <h1>{{titulo}}</h1>
   <apli-detalle [apli]="apli"></apli-detalle>
   
-<div>
+<div class="panel panel-default">
+  <div class="panel-heading">
   <ul class="aplis">
     <li 
     [class.selected]="apliItem === apli"
@@ -10,5 +12,32 @@
       <span class="insignia">{{apliItem.id}}</span> {{apliItem.nombre}}
     </li>
   </ul> 
+</div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    Mi primer formulario
+  </div>
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label for="codigo">Código: </label>
+        <input type="text" class="form-control" id="codigo">
+      </div>
+      <div class="form-group">
+        <label for="nombre">Nombre: </label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+      <div class="form-group">
+        <label for="telefono">Telefono: </label>
+        <input type="text" class="form-control" id="telefono">
+      </div>
+      <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="text" class="form-control" id="email">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
 </div>
 
